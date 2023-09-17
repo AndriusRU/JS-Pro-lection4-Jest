@@ -1,8 +1,8 @@
-import calculateCashback from "../cashback";'../cashback.js';
+import calculateCashback from '../cashback';
 
 test('cashback at sum: 500', () => {
-    const result = calculateCashback(500);
-    expect(result).toBe(0);
+  const result = calculateCashback(500);
+  expect(result).toBe(0);
 });
 
 // Список данных для проверки (массив массивов)
@@ -29,16 +29,16 @@ test('cashback at sum: 500', () => {
 //     expect(result).toBe(expected);
 // });
 
-
 // А теперь все в одном месте
-// Неиспользованные аргументы обычно заменяют на символ нижнего подчеркивания (если не используется в расчетах)
+// Неиспользованные аргументы обычно заменяют на
+// символ нижнего подчеркивания (если не используется в расчетах)
 test.each([
-    ['gold', 100000, 5000],
-    ['silver', 10000, 200],
-    ['regular', 1000, 10],
-    ['no', 500, 0],
+  ['gold', 100000, 5000],
+  ['silver', 10000, 200],
+  ['regular', 1000, 10],
+  ['no', 500, 0],
 ])('testing cashback function with %s status and %i amount', (_, amount, expected) => {
-    const result = calculateCashback(amount);
+  const result = calculateCashback(amount);
 
-    expect(result).toBe(expected);
+  expect(result).toBe(expected);
 });

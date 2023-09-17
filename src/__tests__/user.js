@@ -1,12 +1,12 @@
-import loadUser from "../loadUser.js";
-import { httpGet } from "../http.js";
+import loadUser from '../loadUser';
+import { httpGet } from '../http';
+
 jest.mock('../http');
 // используем mock
 
-
 // эта функция выполняется каждый раз, когда запускается тот или иной тест
 beforeEach(() => {
-    jest.resetAllMocks();
+  jest.resetAllMocks();
 });
 
 // afterEach - запускается после каждого теста
@@ -14,7 +14,7 @@ beforeEach(() => {
 // afterAll - запускается после всех тестов единоразово
 
 test('should call loadUser once', () => {
-    httpGet.mockReturnValue(JSON.stringify({}));
-    loadUser(1);
-    expect(httpGet).toBeCalledWith('http://server:8080/users/1');
+  httpGet.mockReturnValue(JSON.stringify({}));
+  loadUser(1);
+  expect(httpGet).toBeCalledWith('http://server:8080/users/1');
 });

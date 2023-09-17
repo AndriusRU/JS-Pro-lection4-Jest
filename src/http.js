@@ -1,5 +1,4 @@
-
 // функция заглушка
-export function httpGet () {
-    return '{}';
-};
+export function httpGet() {
+  return '{}';
+}
