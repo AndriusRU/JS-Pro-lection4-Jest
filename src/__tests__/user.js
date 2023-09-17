@@ -1,5 +1,5 @@
 import loadUser from '../loadUser';
-import { httpGet } from '../http';
+import httpGet from '../http';
 
 jest.mock('../http');
 // используем mock
