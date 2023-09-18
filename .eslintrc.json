@@ -1,12 +1,29 @@
 {
     "env": {
         "browser": true,
-        "es6": true,
+        "es2021": true,
         "jest": true
     },
     "extends": "airbnb-base",
     "parserOptions": {
-        "ecmaVersion": 2018,
+        "ecmaVersion": "latest",
         "sourceType": "module"
+    },
+    "rules": {
+        "no-restricted-syntax": [
+            "error",
+            "LabeledStatement",
+            "WithStatement"
+        ],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "always"
+            }
+        ],
+        "linebreak-style": 0,
+        "indent": 0,
+        "no-console": "off"
     }
 }
