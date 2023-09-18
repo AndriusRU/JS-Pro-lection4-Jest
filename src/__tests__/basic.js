@@ -3,7 +3,7 @@
 // const { calculateTotal } = require('../src/calculate.js')
 
 // Через import/export
-import { calculateTotal, calculateTotal2 } from '../calculate';
+import { calculateTotal, calculateTotal2 } from '../calculate.js';
 
 test('basic test', () => {
   const result = 4;

@@ -1,6 +1,6 @@
 // напишем функцию для соединения с сервером и получения данных оттуда.
 // Посмотрим как MOCK работает
-import httpGet from './http';
+import httpGet from './http.js';
 
 export default function loadUser(id) {
   // bad practice

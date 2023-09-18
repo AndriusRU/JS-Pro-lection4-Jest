@@ -1,4 +1,4 @@
-import calculateCashback from '../cashback';
+import calculateCashback from '../cashback.js';
 
 test('cashback at sum: 500', () => {
   const result = calculateCashback(500);
